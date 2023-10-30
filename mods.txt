@@ -11,7 +11,7 @@ HJfod
 https://github.com/HJfod/BetterEdit/releases/latest
 
 GDShare
-Lets you search among downloaded songs
+This is a mod for GD that adds buttons to export / import levels.
 HJfod
 0.3.4
 https://github.com/HJfod/GDShare-mod/releases/latest
