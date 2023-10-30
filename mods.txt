@@ -1,0 +1,53 @@
+MinHook
+This is NOT a mod, however it is required to be in the same directory as GeometryDash.exe for some mods to work.
+HJfod
+1.3.3
+https://github.com/HJfod/minhook/releases/latest
+
+BetterEdit
+A mod that adds a ton of quality-of-life features to the GD editor, like typing in HSV, advanced scaling, template building, auto-saving etc.
+HJfod
+4.0.5
+https://github.com/HJfod/BetterEdit/releases/latest
+
+GDShare
+Lets you search among downloaded songs
+HJfod
+0.3.4
+https://github.com/HJfod/GDShare-mod/releases/latest
+
+SceneSwitcher
+Switch between GD scenes by holding down Caps Lock
+HJfod
+1.1
+https://cdn.discordapp.com/attachments/837026406282035300/898684171503939584/SceneSwitcher-v1.1.dll
+
+Scroll Any Input
+GD Mod that allows you to use the scroll wheel on any numeric input 
+HJfod
+1.1
+https://cdn.discordapp.com/attachments/837026406282035300/879435174629224458/ScrollAnyInput-v1.1.dll
+
+Volume Scroll wheel
+Change GD volume using the scroll wheel (Hold alt for music, alt+shift for sfx)
+HJfod
+1.2
+https://cdn.discordapp.com/attachments/837026406282035300/869327712467185714/VolumeControl.dll
+
+Cool Menu Animation
+This is a mod that makes your menu layer have a wacky animation every time you enter it.
+HJfod
+1.1
+https://github.com/HJfod/cool-menu-animation/releases/latest
+
+Icon Save
+Allows you to save and organize icon kits.
+HJfod
+0.42
+https://github.com/HJfod/gd-icon-save-win/releases/latest
+
+GPMods
+Basic gameplay mods for GD (Noclip, Hide Progress Bar, Ghosts)
+HJfod
+1.2
+https://github.com/HJfod/GPMods/releases/latest

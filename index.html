@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
+    <title>Geometry Dash 2.1 mod list</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="deep-purple">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" style="font-size: 3rem">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">GD Mods</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">GD Mods</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <!-- Mods list -->
+    <div class="container">
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Author</th>
+                    <th>Version</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody id="modList">
+                <!-- JavaSript will generate content here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+fetch('mods.txt')
+    .then(response => response.text())
+    .then(data => {
+        const modList = document.getElementById('modList');
+        const lines = data.split('\n');
+
+        let newRow = null;
+        let columnIndex = 0;
+
+        lines.forEach(line => {
+            if (line.trim() === '') {
+                // Empty line
+                if (newRow) {
+                    modList.appendChild(newRow);
+                    newRow = null;
+                    columnIndex = 0;
+                }
+            } else {
+                // Non empty line
+                if (!newRow) {
+                    newRow = document.createElement('tr');
+                }
+
+                const newCell = document.createElement('td');
+                if (columnIndex === 4) { // Column 4 for download link
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = line.trim();
+                    downloadLink.target = "_blank"; // OPENS LINK
+                    downloadLink.classList.add('waves-effect', 'waves-light', 'btn-flat');
+
+                    const icon = document.createElement('i');
+                    icon.classList.add('material-icons');
+                    icon.textContent = "file_download";
+                    downloadLink.appendChild(icon);
+                    newCell.appendChild(downloadLink);
+                } else {
+                    newCell.textContent = line.trim();
+                }
+
+                newRow.appendChild(newCell);
+                columnIndex++;
+            }
+        });
+
+        // Make sure last line is added
+        if (newRow) {
+            modList.appendChild(newRow);
+        }
+    });
+
+    </script>
+</body>
+</html>
