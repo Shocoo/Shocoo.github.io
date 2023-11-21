@@ -51,3 +51,39 @@ Basic gameplay mods for GD (Noclip, Hide Progress Bar, Ghosts)
 HJfod
 1.2
 https://github.com/HJfod/GPMods/releases/latest
+
+ReplayBot
+A replay bot for Geometry Dash
+matcool
+1.5.0
+https://github.com/matcool/ReplayBot/releases/latest
+
+Mat's Nice Hacks
+1.9 gdps hax
+matcool
+1.0.2
+https://github.com/matcool/mats-nice-hacks/releases/latest
+
+Small GD Mods
+small collection of mods for geometry dash
+matcool
+-
+https://matcool.github.io/mods
+
+GD mod example
+Basic Geometry Dash mod example meant for beginners, or as a template for people who want to use CMake + MinHook + gd.h + cocos2d.
+matcool
+1.0
+https://github.com/matcool/gd-mod-example/releases/latest
+
+CocosExplorer
+explorer thingy for cocos2d nodes in gd
+matcool
+0.5.0
+https://github.com/matcool/CocosExplorer/releases/latest
+
+Source-Like Menu
+Custom main menu for Geometry Dash based off the source engine (Half-life 2, Portal, etc)
+matcool
+0.1
+https://github.com/matcool/GD-SourceLikeMenu/releases/latest
